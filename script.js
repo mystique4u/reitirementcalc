@@ -22,25 +22,27 @@
 
 // Your computer knows what the current year is. Figure out how to do that in JavaScript.
 
-
 function calculator(age, retireage) {
+    console.log(age);
     //check user input if it not NaN
-    if (isNaN(age)) {
+    if (isNaN(age) || age.length === 0) {
         alert("You have entered an incorrect age value in the field - Your age. Your input shoul be Number e.g 18");
-    } else if (isNaN(retireage)) {
-
+        return;
+    } else if (isNaN(retireage) || retireage.length === 0) {
         alert("You have entered an incorrect age value in the field - Retirement age. Your input shoul be Number e.g 18");
+        return;
     }
+    else {
+
     //convert user input into Numbers 
     age = Number(age);
     retireage = Number(retireage);
-
     const currentYear = new Date().getFullYear();
-
     let yearsLeft = retireage - age;
     let canRetireYear = currentYear + yearsLeft;
-   
     //Alert result
-    alert(`You have ${yearsLeft} years left until you can retire. It's ${currentYear}, so you can retire in ${canRetireYear}.` )
+    alert(`You have ${yearsLeft} years left until you can retire.\nIt's ${currentYear}, so you can retire in ${canRetireYear}.` )
+    }
 }
+
 calculator(prompt("What is your age?"),prompt("At what age would you like to retire?"));
