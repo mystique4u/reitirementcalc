@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;;
+    font-weight: 400;
+}
+/* Typography */
+h1 {
+    font-size: 2.5rem;
+    margin-top: 0;
+    border-top:8px solid #000;
+    max-width: 30%;
+    padding-top: 0.5rem;
+    font-weight: 700;
+}
+legend {
+    font-size: 1.2rem;
+    width: 100%;
+    margin: 0;
+    padding-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+
+body {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #d4d4d4;
+}

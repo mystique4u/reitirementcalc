@@ -1,0 +1,5 @@
+
+let userinput age = prompt what is your age?
+let userinput retirement age = prompt At what age would you like to retire?
+convert userinput from string to date
+
